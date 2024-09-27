@@ -1,27 +1,65 @@
-let hour = 24
-let minute = 60
-let sec = 60
-let day = 30
-let year = 365
+console.log(`Задание 1`)
 
 
-console.log("количество секунд в сутках:", hour*minute*sec)
-console.log("секунд в 30 сутках:", hour*30*minute*sec)
-console.log("количество секнуд в году:", hour*365*minute*sec)
-console.log("количество минут в сутках:", hour*minute)
-console.log("количество минту в году:", minute*hour*year )
+let user = {
+    name: "John",
+    age: 30
+    };
+console.log('age' in user)
 
-let bit = 1 // так понял бит тоже надо было прописать, чтобы был полный список системы едениц  ¯ \ _ (ツ) _ / ¯
-let bytes = 8
-let kilobytes = 1024
-let megabytes = 1024
-let gigabytes = 1024
-let terabytes = 1024
+console.log(`Задание 2`)
+let users = [
+    {
+        name: "John",
+        age: 30
+    },
+    {
+        name: "Bob",
+        age: 21
+    },
+    {
+        name: "Anna",
+        age: 19
+    }
+]
+    
+console.log(users[1])
 
-console.log("байт в мегабайте:", bytes*kilobytes*megabytes )
-console.log("количество байт в гигабайте:", bytes*kilobytes*megabytes*gigabytes)
-console.log("количество байт в 10 гигабайтах:", bytes*kilobytes*megabytes*gigabytes*10)
-console.log("количество байт в терабайте:", bytes*kilobytes*megabytes*gigabytes*terabytes)
-console.log("количество килобайт в терабайте:", kilobytes*megabytes*gigabytes*terabytes)
+console.log(`Задание 3`)
+ users =[
+    {
+        name: "John",
+        age: 30
+    },
+    {
+        name: "Bob",
+        age: 21
+    },
+    {
+        name: "Anna",
+        age: 19
+    }
+  ]
+  delete users[1]
+console.log(users)
 
+console.log(`Задание 4`)
+let sort = users.sort((a, b) => a.age - b.age);
+console.log(sort)
+
+console.log(`Задание 5`)
+const obj = {
+    id: 5,
+   token: 12343423
+    };
+    const {id} = obj;
+console.log(id);
+
+console.log(`Задание 6`)
+const obj1 = {
+    id: 5,
+    token: 12343423
+};
+const {id: userld} = obj
+console.log(userld)
 
